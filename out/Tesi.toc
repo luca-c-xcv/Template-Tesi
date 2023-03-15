@@ -1,0 +1,12 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {chapter}{Elenco delle figure}{ii}{}%
+\contentsline {chapter}{Elenco dei codici sorgente}{iii}{}%
+\thispagestyle {empty}
+\contentsline {chapter}{Introduzione}{1}{}%
+\contentsline {chapter}{\numberline {1}Hello World 1}{2}{}%
+\contentsline {section}{\numberline {1.1}S1 - Hello World }{4}{}%
+\contentsline {subsection}{\numberline {1.1.1}Sottosezione 1}{4}{}%
+\contentsline {chapter}{\numberline {2}Capitolo 2 di test}{5}{}%
+\contentsline {subsection}{\numberline {2.0.1}Sottosezione 1}{5}{}%
+\contentsline {chapter}{Conclusioni}{8}{}%

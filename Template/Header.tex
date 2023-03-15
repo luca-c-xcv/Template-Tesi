@@ -1,0 +1,68 @@
+% DOCUMENTS TYPE %
+% Carattere dimensione 12
+% \documentclass[12pt]{report}
+% Per la stampa fronte-retro sostituire con:
+\documentclass[12pt, twoside]{report}
+
+
+% DEFINE PACKAGES %
+
+% Margini (4cm a sx, 2.5cm a dx, 2.5cm in alto, 2.5cm in basso)
+% \usepackage[top=2.5cm, bottom=2.5cm, left=4cm, right=2.5cm, centering]{geometry}
+% Per la stampa fronte-retro sostituire con:
+\usepackage[top=2.5cm, bottom=2.5cm, inner=4cm, outer=4cm, right=2.5cm, centering]{geometry}
+
+\usepackage[italian]{babel} % applicazione regole di scrittura per la lingua italiana
+
+\usepackage[utf8]{inputenc} % codifica UTF-8
+
+\usepackage{scrlayer-scrpage} % stili pagina per il frontespizio
+\usepackage[T1]{fontenc}
+
+% \usepackage{mathptmx} % font Times New Roman (simile)
+
+\usepackage{mathpazo} % font Palatino (simile)
+
+% \usepackage[math]{iwona}
+
+% \usepackage[sfmath]{kpfonts} %% sfmath option only to make math in sans serif. Probablye only for use when base font is sans serif.
+% \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage{graphicx} % inserimento di immagini
+
+\usepackage{csquotes} % per le citazioni "in blocco"
+% \usepackage[backend=biber, sorting=nty, ]{biblatex} % bibliografia con pacchetto biblatex (https://ctan.org/pkg/biblatex?lang=en)
+
+\usepackage{titlesec} % per la formattazione dei titoli delle sezioni, capitoli etc.
+
+\usepackage{float} % per il posizionamento delle immagini
+
+\usepackage{listings} % per il codice di programmazione
+% Fonte https://en.wikibooks.org/wiki/LaTeX/
+\usepackage[chapter]{minted}
+
+\usepackage{amsmath} %pacchetto per matematica
+\usepackage{amsthm}	%pacchetto per teoremi
+
+
+
+
+% SET PACKAGES %
+
+\linespread{1.5} % Interlinea
+
+\ifoot[]{}
+\cfoot[]{}
+\ofoot[\pagemark]{\pagemark}
+
+\pagestyle{scrplain}
+
+\appto{\bibsetup}{\raggedright}
+
+% Formato delle intestazioni
+\titleformat{\chapter}[block]
+  {\normalfont\LARGE\bfseries}{\thechapter.}{0.5em}{\LARGE}
+\titlespacing*{\chapter}{0pt}{-20pt}{25pt}
+
+\renewcommand\listoflistingscaption{Elenco dei codici sorgente} %rename "List of listings"
+\newtheorem{thm}{Teorema}

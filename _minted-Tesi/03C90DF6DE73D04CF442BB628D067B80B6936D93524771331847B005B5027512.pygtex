@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{destroy\PYGZus{}queue}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{queue\PYGZus{}t}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{q}\PYG{+w}{ }\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+\PYG{+w}{	}\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{q}\PYG{+w}{ }\PYG{o}{!=}\PYG{+w}{ }\PYG{n+nb}{NULL}\PYG{+w}{ }\PYG{p}{)}
+\PYG{+w}{	}\PYG{p}{\PYGZob{}}
+\PYG{+w}{		}\PYG{n}{clear\PYGZus{}queue}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{q}\PYG{+w}{ }\PYG{p}{);}
+
+\PYG{+w}{		}\PYG{n}{pthread\PYGZus{}mutex\PYGZus{}lock}\PYG{p}{(}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{n}{q}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{queue\PYGZus{}lock}\PYG{+w}{ }\PYG{p}{);}
+\PYG{+w}{			}\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{q}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{head}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{ptr}\PYG{+w}{ }\PYG{o}{!=}\PYG{+w}{ }\PYG{n+nb}{NULL}\PYG{+w}{ }\PYG{p}{)}
+\PYG{+w}{				}\PYG{n}{free}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{q}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{head}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{ptr}\PYG{+w}{ }\PYG{p}{);}
+\PYG{+w}{			}\PYG{n}{free}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{q}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{head}\PYG{+w}{ }\PYG{p}{);}
+\PYG{+w}{		}\PYG{n}{pthread\PYGZus{}mutex\PYGZus{}unlock}\PYG{p}{(}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{n}{q}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{queue\PYGZus{}lock}\PYG{+w}{ }\PYG{p}{);}
+
+\PYG{+w}{		}\PYG{n}{free}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{q}\PYG{+w}{ }\PYG{p}{);}
+\PYG{+w}{	}\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

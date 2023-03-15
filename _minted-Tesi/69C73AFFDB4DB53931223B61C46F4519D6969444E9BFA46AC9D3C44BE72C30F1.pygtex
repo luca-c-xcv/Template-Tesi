@@ -1,0 +1,37 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{function}\PYG{+w}{ }\PYG{n+nx}{foo}\PYG{p}{(}\PYG{+w}{ }\PYG{n+nx}{array}\PYG{+w}{ }\PYG{p}{)}
+\PYG{+w}{  }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n+nx}{sume}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n+nx}{counte}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n+nx}{sumo}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n+nx}{counto}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nx}{n}\PYG{+w}{ }\PYG{k}{of}\PYG{+w}{ }\PYG{n+nx}{array}\PYG{+w}{ }\PYG{p}{)}
+\PYG{+w}{      }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nx}{even}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{n}\PYG{+w}{ }\PYG{o}{\PYGZpc{}}\PYG{+w}{ }\PYG{l+m+mf}{2}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{(}\PYG{+w}{ }\PYG{n+nx}{even}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mf}{0}\PYG{+w}{ }\PYG{o}{?}\PYG{+w}{ }\PYG{n+nx}{sume}\PYG{+w}{ }\PYG{o}{+=}\PYG{+w}{ }\PYG{n+nx}{n}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{n+nx}{sumo}\PYG{+w}{ }\PYG{o}{+=}\PYG{+w}{ }\PYG{n+nx}{n}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{(}\PYG{+w}{ }\PYG{n+nx}{even}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mf}{0}\PYG{+w}{ }\PYG{o}{?}\PYG{+w}{ }\PYG{n+nx}{counte}\PYG{o}{++}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{n+nx}{counto}\PYG{o}{++}\PYG{p}{;}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nx}{re}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{counte}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mf}{0}\PYG{+w}{ }\PYG{o}{?}\PYG{+w}{ }\PYG{l+m+mf}{0}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{n+nx}{sume}\PYG{o}{/}\PYG{n+nx}{counte}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nx}{ro}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{counto}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mf}{0}\PYG{+w}{ }\PYG{o}{?}\PYG{+w}{ }\PYG{l+m+mf}{0}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{n+nx}{sumo}\PYG{o}{/}\PYG{n+nx}{counto}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{[}\PYG{n+nx}{re}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{ro}\PYG{p}{];}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+
+
+\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{array}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{o+ow}{new}\PYG{+w}{ }\PYG{n+nb}{Array}\PYG{p}{();}
+\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n+nx}{stop}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k+kc}{false}
+
+\PYG{k}{do}
+\PYG{+w}{  }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n+nx}{v}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{prompt}\PYG{p}{(}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}insert: \PYGZdq{}}\PYG{+w}{ }\PYG{p}{);}
+\PYG{+w}{    }\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n+nx}{v}\PYG{+w}{ }\PYG{o}{!=}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}STOP!\PYGZdq{}}\PYG{+w}{ }\PYG{p}{)}
+\PYG{+w}{      }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n+nx}{v}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{Number}\PYG{p}{(}\PYG{n+nx}{v}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n+nx}{array}\PYG{p}{.}\PYG{n+nx}{push}\PYG{p}{(}\PYG{+w}{ }\PYG{n+nx}{v}\PYG{+w}{ }\PYG{p}{);}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{k}{else}
+\PYG{+w}{      }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n+nx}{stop}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k+kc}{true}\PYG{p}{;}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+\PYG{k}{while}\PYG{p}{(}\PYG{+w}{ }\PYG{o}{!}\PYG{n+nx}{stop}\PYG{+w}{ }\PYG{p}{);}
+\end{Verbatim}

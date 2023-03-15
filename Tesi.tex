@@ -1,0 +1,36 @@
+\input{Template/Header.tex}
+
+\input{Template/SourceCode.tex}
+
+\begin{document}
+
+  \input{Template/Titlepage.tex}
+  \pagenumbering{roman}
+
+  \tableofcontents
+  \thispagestyle{empty}
+
+  \listoffigures
+  \addcontentsline{toc}{chapter}{Elenco delle figure}
+  % \thispagestyle{empty}
+
+  \listoflistings
+  \addcontentsline{toc}{chapter}{Elenco dei codici sorgente}
+  % \thispagestyle{empty}
+  \clearpage
+  
+
+  \pagenumbering{arabic} 
+  \setcounter{page}{1}
+  \addtocontents{toc}{\protect\thispagestyle{empty}}
+
+  \input{Template/Chapters.tex}
+
+  % BIBLIOGRAPHY %
+
+  \bibliographystyle{plain} % We choose the "plain" reference style
+  \bibliography{bibliography} % Entries are in the refs.bib file
+  % \addbibresource{bibliography.bib}
+  % \printbibliography
+
+\end{document}

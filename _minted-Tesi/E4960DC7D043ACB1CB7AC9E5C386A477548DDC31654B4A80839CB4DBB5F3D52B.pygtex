@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{public}\PYG{+w}{ }\PYG{n}{class}\PYG{+w}{ }\PYG{n}{Test}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{	}\PYG{n}{public}\PYG{+w}{ }\PYG{k}{static}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{main}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{String}\PYG{p}{[]}\PYG{+w}{ }\PYG{n}{args}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{		}\PYG{n}{SMap}\PYG{o}{\PYGZlt{}}\PYG{n}{Integer}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{String}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{test}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{new}\PYG{+w}{ }\PYG{n}{TwoListSMap}\PYG{o}{\PYGZlt{}}\PYG{n}{Integer}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{String}\PYG{o}{\PYGZgt{}}\PYG{p}{();}
+
+\PYG{+w}{		}\PYG{n}{test}\PYG{p}{.}\PYG{n}{put}\PYG{p}{(}\PYG{n}{new}\PYG{+w}{ }\PYG{n}{Integer}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}uno\PYGZdq{}}\PYG{p}{);}
+\PYG{+w}{		}\PYG{n}{test}\PYG{p}{.}\PYG{n}{put}\PYG{p}{(}\PYG{n}{new}\PYG{+w}{ }\PYG{n}{Integer}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m+mi}{30}\PYG{p}{),}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}trenta\PYGZdq{}}\PYG{p}{);}
+
+\PYG{+w}{		}\PYG{n}{test}\PYG{p}{.}\PYG{n}{get}\PYG{p}{(}\PYG{n}{new}\PYG{+w}{ }\PYG{n}{Integer}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m+mi}{30}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{);}
+
+\PYG{+w}{		}\PYG{n}{System}\PYG{p}{.}\PYG{n}{out}\PYG{p}{.}\PYG{n}{println}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{test}\PYG{p}{.}\PYG{n}{getKeys}\PYG{p}{().}\PYG{n}{toString}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{);}
+\PYG{+w}{		}\PYG{n}{System}\PYG{p}{.}\PYG{n}{out}\PYG{p}{.}\PYG{n}{println}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{test}\PYG{p}{.}\PYG{n}{toString}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{);}
+\PYG{+w}{	}\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

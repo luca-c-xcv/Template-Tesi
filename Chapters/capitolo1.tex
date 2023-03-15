@@ -1,0 +1,56 @@
+\chapter{Hello World 1}
+\label{ch:capitolo1}
+
+% --- Inizio del Capitolo 1 ---
+
+Capitolo 1...
+
+
+    \textbf{Hello World!} Today I am learning \LaTeX. %notice how the command will end at the first non-alphabet charecter such as the . after \LaTeX
+     \LaTeX{} is a great program for writing math. I can write in line math such as $a^2+b^2=c^2$ %$ tells LaTexX to compile as math
+     . I can also give equations their own space:
+    \begin{equation} % Creates an equation environment and is compiled as math
+    \gamma^2+\theta^2=\omega^2
+    \end{equation}
+    If I do not leave any blank lines \LaTeX{} will continue  this text without making it into a new paragraph.  Notice how there was no indentation in the text after equation (1).
+    Also notice how even though I hit enter after that sentence and here $\downarrow$
+     \LaTeX{} formats the sentence without any break.  Also   look  how      it   doesn't     matter          how    many  spaces     I put     between       my    words.
+
+    For a new paragraph I can leave a blank space in my code.
+
+Esempio di una nota\footnote{CleanCode} con citazione a sezione~\ref{sec:sezione1}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{assets/images/logo-dip_blu_hr.png}
+    \caption{Esempio di un'immagine}
+    \label{fig:immagine1}
+\end{figure}
+
+% \begin{lstlisting}[caption={Esempio codice JavaScript},label={Esempio codice JavaScript}, language=JavaScript]
+% function foo(num) {
+%     const bar = 2;
+%     return num + bar;
+% }
+%
+% const result = foo(2);
+% // result -> 4
+% \end{lstlisting}
+
+% \lstinputlisting[caption={Esempio codice JavaScript},label={Esempio codice JavaScript}, language=JavaScript]{assets/src/test.js}
+
+\AtEndEnvironment{listing}{\vspace{-9pt}}
+\inputmintedtesi{js}{assets/src/test.js}{Codice JavaScript}
+
+
+\section{S1 - Hello World \label{sec:sezione1}}
+
+
+Sezione 1... con citazione bibliografica~\cite{CleanCode}
+
+\subsection{Sottosezione 1}
+\label{subsec:sottosezione1}
+
+Sottosezione 1...
+
+$$\bar{X}\pm\frac{\sqrt{\hat{p}(1-\hat{p})}}{\sqrt{n}}q_{1-\frac{\alpha}{2}} = \hat{p}\pm\frac{\sqrt{\hat{p}(1-\hat{p})}}{\sqrt{n}}q_{1-\frac{\alpha}{2}}$$
