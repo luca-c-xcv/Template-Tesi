@@ -21,9 +21,9 @@ This is my Computer Science Bachelor's thesis template based on the [UniPi Bache
 
 ## Requires
 
-Python with `pip` installed. You need to install `Pygment` with this command `pip install Pygment`.
+Python with `pip`. You have to install `Pygment` with this command `pip install Pygment`.
 
-`minted` requires that the following packages be available and reasonably up to date on your system.
+`minted` requires the following packages available and reasonably up to date on your system.
 
 - keyval
 - kvoptions
